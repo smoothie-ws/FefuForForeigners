@@ -1,0 +1,447 @@
+@font-face {
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 200 800;
+	font-display: fallback;
+	src: url(Manrope.woff2) format("woff2");
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+:root {
+	--color-accent: rgb(51, 180, 255);
+}
+
+body {
+	margin: 0;
+	font: 16px/1.5 Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+	color: #fff;
+	background-color: #171724;
+	background-image: radial-gradient(960px 1440px at 35% 0%, #191c37, #171724);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+a {
+	color: var(--color-accent);
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	text-decoration: underline;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	backdrop-filter: blur(20px);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	margin-bottom: 5rem;
+}
+
+header .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header-button {
+	color: #000;
+	font-weight: bold;
+	background: #fff;
+	font-size: .8rem;
+	padding: 0 1rem;
+	border-radius: 5rem;
+	display: flex;
+	align-items: center;
+	height: 40px;
+}
+
+.header-button:hover {
+	background: var(--color-accent);
+	color: #ffffff;
+}
+
+.header-visit {
+	color: #000;
+	font-weight: bold;
+	background: #5feca5;
+	font-size: .8rem;
+	padding: 0 1rem;
+	border-radius: 5rem;
+	display: flex;
+	align-items: center;
+	height: 40px;
+	gap: 10px;
+}
+
+.header-visit:hover {
+	background: #0e925b;
+	color: #ffffff;
+}
+
+header h1 {
+	padding: 1rem 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	font-size: 2rem;
+}
+
+header h1 img {
+	margin-right: .5rem;
+}
+
+.header-buttons {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 1rem;
+	max-width: 1440px;
+	width: 100%;
+}
+
+.hero .download .btn {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	color: #000;
+	text-decoration: none;
+	vertical-align: middle;
+	cursor: pointer;
+	background: var(--color-accent);
+	border-radius: 5rem;
+	font-size: 1.3rem;
+	font-weight: bold;
+	line-height: 1;
+	padding: .5rem 1rem;
+}
+
+.hero .download-unstable {
+	font-size: 1rem;
+}
+
+.hero .download-unstable a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.hero .download-unstable a:hover,
+.hero .download-unstable a:focus {
+	border-radius: 6px;
+	color: var(--color-accent);
+}
+
+.hero .download .btn:hover,
+.hero .download .btn:focus {
+	text-decoration: none;
+	color: #000;
+	background: #fff;
+}
+
+.hero .download .btn:hover span,
+.hero .download .btn:focus span {
+	text-decoration: underline;
+}
+
+.hero .download {
+	margin-top: 60px;
+}
+
+.hero .download-text {
+	margin-left: .5rem;
+}
+
+.hero .download-text span {
+	white-space: nowrap;
+}
+
+.hero .download-version {
+	font-size: .8rem;
+	margin-top: .4rem;
+	margin-left: 1rem;
+	color: #fff;
+}
+
+.hero .download svg {
+	align-self: center;
+	flex-shrink: 0;
+}
+
+.hero .container {
+	display: flex;
+	gap: 60px;
+}
+
+.hero-left {
+	font-size: 1.5rem;
+	max-width: 600px;
+	align-self: center;
+}
+
+.hero-left>p {
+	margin-top: 0;
+}
+
+.hero-fluff b {
+	color: var(--color-accent);
+}
+
+.hero-screenshot {
+	width: 100%;
+	width: calc(100vw / 2 - 5%);
+	max-width: 1200px;
+	aspect-ratio: 1800 / 1200;
+	border-radius: 10px;
+	box-shadow: rgb(51 255 170 / 30%) 0 0 80px 0;
+}
+
+.supported img {
+	width: 24px;
+	height: 24px;
+	vertical-align: -0.2rem;
+}
+
+.supported a {
+	white-space: nowrap;
+}
+
+.libraries {
+	max-width: 1800px;
+	padding: 2rem 0;
+	margin: 0 auto;
+	margin-top: 5rem;
+	border-radius: 2rem;
+	background: linear-gradient(rgba(255, 255, 255, 0) 10%, var(--color-accent) 1000%);
+}
+
+.libraries .container {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 10%;
+}
+
+.map {
+	border-radius: 1rem;
+	position: relative;
+}
+
+.library {
+	display: flex;
+	gap: 2rem;
+	margin-bottom: 3rem;
+}
+
+.library:last-child {
+	margin-bottom: 0;
+}
+
+.library-icon {
+	padding-top: 1rem;
+}
+
+.library-description {
+	max-width: 600px;
+}
+
+.library-description h2 {
+	margin-top: 0;
+	margin-bottom: .5rem;
+	font-size: 2rem;
+	word-break: break-all;
+}
+
+.library-description p {
+	margin: 0;
+	margin-bottom: .7rem;
+	text-wrap: balance;
+}
+
+.screenshots {
+	max-width: calc(100vw - 10%);
+	margin-top: 7rem;
+	margin-bottom: 7rem;
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	align-items: end;
+}
+
+.screenshots img {
+	width: 100%;
+	border-radius: 10px;
+	aspect-ratio: 1 / 1;
+}
+
+.screenshots figure {
+	margin: 0;
+	width: 480px;
+	font-size: 0;
+}
+
+.screenshots figcaption {
+	color: var(--color-accent);
+	line-height: 1;
+	padding: .5rem;
+	font-size: 1rem;
+	text-align: center;
+	text-wrap: balance;
+}
+
+.footnote {
+	text-align: center;
+	text-wrap: balance;
+	margin-bottom: 6rem;
+}
+
+.footer {
+	margin: 3rem auto;
+	line-height: 1.75;
+	color: #ccc;
+}
+
+.footer .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+	gap: 1rem;
+}
+
+.footer .footer-right {
+	text-align: right;
+}
+
+.review {
+	font-family: Consolas, monospace;
+	border: 2px solid #ffffff;
+	border-radius: 1rem;
+	color: #f8f8f2;
+	padding: 2rem;
+}
+
+.review-header {
+	background: #ffffff;
+	color: #000;
+	border-radius: 1rem;
+	padding: .2rem 1rem;
+	position: absolute;
+	top: 0;
+	right: .5rem;
+	z-index: 1;
+}
+
+@media (max-width: 1300px) {
+	.hero .container {
+		flex-direction: column;
+	}
+
+	.hero-screenshot {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 1100px) {
+	.libraries .container {
+		flex-direction: column;
+	}
+
+	.library-code {
+		width: 100%;
+	}
+
+	.review {
+		overflow-x: auto;
+		padding: .5rem;
+	}
+
+	.screenshots {
+		margin-top: 1rem;
+	}
+}
+
+@media (max-width: 840px) {
+	header {
+		position: unset;
+		margin-bottom: 2rem;
+	}
+
+	.hero-screenshot,
+	.header-buttons {
+		display: none;
+	}
+
+	.hero .download .btn {
+		display: flex;
+	}
+
+	.hero .download-unstable {
+		display: block;
+		margin: 1rem 0;
+		text-align: center;
+	}
+
+	.hero .download-notes {
+		text-align: center;
+	}
+
+	.hero .download-version {
+		text-decoration: underline;
+		font-size: 1rem;
+		margin-top: 1rem;
+		margin-left: 0;
+	}
+
+	.libraries {
+		margin-top: 1rem;
+	}
+
+	.library {
+		gap: 1rem;
+	}
+
+	.library-description h2 {
+		font-size: 1.2rem;
+	}
+
+	.library-icon {
+		padding-top: 0;
+	}
+
+	.footer .container,
+	.screenshots {
+		flex-direction: column;
+	}
+
+	.footer .container {
+		align-items: unset;
+	}
+
+	.footer .footer-left,
+	.footer .footer-right {
+		text-align: center;
+	}
+
+	.screenshots figure {
+		width: auto;
+		max-width: 480px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 400px) {
+
+	header h1,
+	.hero-left {
+		font-size: 1.5rem;
+	}
+}
