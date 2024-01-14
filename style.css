@@ -40,7 +40,9 @@ header {
 	backdrop-filter: blur(30px);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 	margin-bottom: 5rem;
+	z-index: 1000;
 }
+
 
 header .container {
 	display: flex;
@@ -221,9 +223,11 @@ header h1 img {
 }
 
 .map {
-	max-width: 500px;
+	width: 600px;
+	height: auto;
 	border-radius: 1rem;
 	margin: 50px;
+	box-shadow: rgb(34, 40, 94) 0 0 80px 0;
 }
 
 .pro-list {
