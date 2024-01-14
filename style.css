@@ -20,7 +20,7 @@ body {
 	color: #fff;
 	background-color: #171724;
 	background-image: radial-gradient(960px 1440px at 35% 0%, #191c37, #171724);
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-size: cover;
 }
 
@@ -130,7 +130,7 @@ header h1 img {
 .container {
 	margin: 0 auto;
 	padding: 0 1rem;
-	max-width: 1575px;
+	max-width: 1320px;
 	width: 100%;
 }
 
@@ -216,6 +216,11 @@ header h1 img {
 	margin-top: 0;
 }
 
+.about-right {
+	max-width: 720px;
+	align-self: center;
+}
+
 .about-fluff b {
 	color: var(--color-accent);
 }
@@ -237,7 +242,7 @@ header h1 img {
 	white-space: nowrap;
 }
 
-.libraries {
+.pros {
 	max-width: 1800px;
 	padding: 2rem 0;
 	margin: 0 auto;
@@ -246,7 +251,7 @@ header h1 img {
 	background: linear-gradient(rgba(255, 255, 255, 0) 10%, var(--color-accent) 1000%);
 }
 
-.libraries .container {
+.pros .container {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -254,36 +259,37 @@ header h1 img {
 }
 
 .map {
+	max-width: 500px;
 	border-radius: 1rem;
-	position: relative;
+	margin-top: 2.5rem;
 }
 
-.library {
+.pro {
 	display: flex;
 	gap: 2rem;
 	margin-bottom: 3rem;
 }
 
-.library:last-child {
+.pro:last-child {
 	margin-bottom: 0;
 }
 
-.library-icon {
+.pro-icon {
 	padding-top: 1rem;
 }
 
-.library-description {
+.pro-description {
 	max-width: 600px;
 }
 
-.library-description h2 {
+.pro-description h2 {
 	margin-top: 0;
 	margin-bottom: .5rem;
 	font-size: 2rem;
 	word-break: break-all;
 }
 
-.library-description p {
+.pro-description p {
 	margin: 0;
 	margin-bottom: .7rem;
 	text-wrap: balance;
@@ -383,11 +389,11 @@ header h1 img {
 }
 
 @media (max-width: 1100px) {
-	.libraries .container {
+	.pros .container {
 		flex-direction: column;
 	}
 
-	.library-code {
+	.pro-code {
 		width: 100%;
 	}
 
@@ -407,7 +413,6 @@ header h1 img {
 		margin-bottom: 2rem;
 	}
 
-	.about-screenshot,
 	.header-buttons {
 		display: none;
 	}
@@ -433,19 +438,19 @@ header h1 img {
 		margin-left: 0;
 	}
 
-	.libraries {
+	.pros {
 		margin-top: 1rem;
 	}
 
-	.library {
+	.pro {
 		gap: 1rem;
 	}
 
-	.library-description h2 {
+	.pro-description h2 {
 		font-size: 1.2rem;
 	}
 
-	.library-icon {
+	.pro-icon {
 		padding-top: 0;
 	}
 
