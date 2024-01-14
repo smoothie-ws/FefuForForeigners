@@ -37,8 +37,7 @@ a:active {
 header {
 	position: sticky;
 	top: 0;
-	z-index: 10;
-	backdrop-filter: blur(20px);
+	backdrop-filter: blur(30px);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 	margin-bottom: 5rem;
 }
@@ -131,10 +130,9 @@ header h1 img {
 	margin: 0 auto;
 	padding: 0 1rem;
 	max-width: 1320px;
-	width: 100%;
 }
 
-.about .download .btn {
+.about .apply .btn {
 	position: relative;
 	display: inline-flex;
 	align-items: center;
@@ -150,53 +148,44 @@ header h1 img {
 	padding: .5rem 1rem;
 }
 
-.about .download-unstable {
-	font-size: 1rem;
-}
-
-.about .download-unstable a {
-	color: inherit;
-	text-decoration: underline;
-}
-
-.about .download-unstable a:hover,
-.about .download-unstable a:focus {
+.about .apply-unstable a:hover,
+.about .apply-unstable a:focus {
 	border-radius: 6px;
 	color: var(--color-accent);
 }
 
-.about .download .btn:hover,
-.about .download .btn:focus {
+.about .apply .btn:hover,
+.about .apply .btn:focus {
 	text-decoration: none;
 	color: #000;
 	background: #fff;
 }
 
-.about .download .btn:hover span,
-.about .download .btn:focus span {
+.about .apply .btn:hover span,
+.about .apply .btn:focus span {
 	text-decoration: underline;
 }
 
-.about .download {
+.about .apply {
 	margin-top: 60px;
 }
 
-.about .download-text {
+.about .apply-text {
 	margin-left: .5rem;
 }
 
-.about .download-text span {
+.about .apply-text span {
 	white-space: nowrap;
 }
 
-.about .download-version {
+.about .apply-version {
 	font-size: .8rem;
 	margin-top: .4rem;
 	margin-left: 1rem;
 	color: #fff;
 }
 
-.about .download svg {
+.about .apply svg {
 	align-self: center;
 	flex-shrink: 0;
 }
@@ -225,7 +214,7 @@ header h1 img {
 	color: var(--color-accent);
 }
 
-.about-screenshot {
+.about-pic {
 	width: 125%;
 	max-width: 1200px;
 	border-radius: 10px;
@@ -244,8 +233,6 @@ header h1 img {
 
 .pros {
 	max-width: 1800px;
-	padding: 2rem 0;
-	margin: 0 auto;
 	margin-top: 5rem;
 	border-radius: 2rem;
 	background: linear-gradient(rgba(255, 255, 255, 0) 10%, var(--color-accent) 1000%);
@@ -253,15 +240,22 @@ header h1 img {
 
 .pros .container {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: center;
-	gap: 10%;
+	gap: 5%;
+	flex-direction: row;
 }
 
 .map {
 	max-width: 500px;
 	border-radius: 1rem;
-	margin-top: 2.5rem;
+	margin: 50px;
+}
+
+.pro-list {
+	max-width: 1800px;
+	margin: 3%;
+	border-radius: 2rem;
 }
 
 .pro {
@@ -295,8 +289,7 @@ header h1 img {
 	text-wrap: balance;
 }
 
-.screenshots {
-	max-width: calc(100vw - 10%);
+.opps {
 	margin-top: 7rem;
 	margin-bottom: 7rem;
 	display: flex;
@@ -305,13 +298,13 @@ header h1 img {
 	align-items: end;
 }
 
-.screenshots img {
+.opps img {
 	width: 100%;
 	border-radius: 10px;
 	aspect-ratio: 1 / 1;
 }
 
-.screenshots figure {
+.opps figure {
 	margin: 0;
 	width: 480px;
 	font-size: 0;
@@ -326,7 +319,7 @@ header h1 img {
 	margin-top: 10px;
 }
 
-.screenshots figcaption {
+.opps figcaption {
 	color: var(--color-accent);
 	line-height: 1;
 	padding: 1rem;
@@ -382,7 +375,7 @@ header h1 img {
 		flex-direction: column;
 	}
 
-	.about-screenshot {
+	.about-pic {
 		width: 100%;
 		max-width: 100%;
 	}
@@ -390,6 +383,7 @@ header h1 img {
 
 @media (max-width: 1100px) {
 	.pros .container {
+		padding-top: 50px;
 		flex-direction: column;
 	}
 
@@ -402,36 +396,39 @@ header h1 img {
 		padding: .5rem;
 	}
 
-	.screenshots {
+	.opps {
 		margin-top: 1rem;
 	}
 }
 
 @media (max-width: 840px) {
 	header {
-		position: unset;
 		margin-bottom: 2rem;
+	}
+
+	.image-container {
+		max-width: 300px;
 	}
 
 	.header-buttons {
 		display: none;
 	}
 
-	.about .download .btn {
+	.about .apply .btn {
 		display: flex;
 	}
 
-	.about .download-unstable {
+	.about .apply-unstable {
 		display: block;
 		margin: 1rem 0;
 		text-align: center;
 	}
 
-	.about .download-notes {
+	.about .apply-notes {
 		text-align: center;
 	}
 
-	.about .download-version {
+	.about .apply-version {
 		text-decoration: underline;
 		font-size: 1rem;
 		margin-top: 1rem;
@@ -439,7 +436,7 @@ header h1 img {
 	}
 
 	.pros {
-		margin-top: 1rem;
+		margin: 0.5rem;
 	}
 
 	.pro {
@@ -455,7 +452,7 @@ header h1 img {
 	}
 
 	.footer .container,
-	.screenshots {
+	.opps {
 		flex-direction: column;
 	}
 
@@ -468,10 +465,14 @@ header h1 img {
 		text-align: center;
 	}
 
-	.screenshots figure {
+	.opps figure {
 		width: auto;
 		max-width: 480px;
 		margin: 0 auto;
+	}
+
+	.map {
+		max-width: 600px;
 	}
 }
 

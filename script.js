@@ -50,7 +50,7 @@ function toggleLanguage() {
         currentLanguage = 'ru';
         webTitle.textContent = 'ДВФУ';
 
-        headingLabel.innerHTML = '<img src="assets/logo.png" alt="" width="64" height="64"> Дальневосточный Федеральный Университет';
+        headingLabel.innerHTML = '<img src="assets/logo.png" alt="" width="64" height="64"> ДВФУ';
         aboutButton.textContent = 'О ДВФУ';
         prosButton.textContent = 'Преимущества';
         oppsButton.textContent = 'Возможности';
@@ -132,7 +132,7 @@ function toggleLanguage() {
         currentLanguage = 'en';
         webTitle.textContent = 'FEFU';
 
-        headingLabel.innerHTML = '<img src="assets/logo.png" alt="" width="64" height="64"> Far Eastern Federal University';
+        headingLabel.innerHTML = '<img src="assets/logo.png" alt="" width="64" height="64"> FEFU';
         aboutButton.textContent = "What's FEFU";
         prosButton.textContent = 'Advantages';
         oppsButton.textContent = 'Opportunities';
