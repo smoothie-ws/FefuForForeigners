@@ -130,11 +130,11 @@ header h1 img {
 .container {
 	margin: 0 auto;
 	padding: 0 1rem;
-	max-width: 1440px;
+	max-width: 1575px;
 	width: 100%;
 }
 
-.hero .download .btn {
+.about .download .btn {
 	position: relative;
 	display: inline-flex;
 	align-items: center;
@@ -150,77 +150,77 @@ header h1 img {
 	padding: .5rem 1rem;
 }
 
-.hero .download-unstable {
+.about .download-unstable {
 	font-size: 1rem;
 }
 
-.hero .download-unstable a {
+.about .download-unstable a {
 	color: inherit;
 	text-decoration: underline;
 }
 
-.hero .download-unstable a:hover,
-.hero .download-unstable a:focus {
+.about .download-unstable a:hover,
+.about .download-unstable a:focus {
 	border-radius: 6px;
 	color: var(--color-accent);
 }
 
-.hero .download .btn:hover,
-.hero .download .btn:focus {
+.about .download .btn:hover,
+.about .download .btn:focus {
 	text-decoration: none;
 	color: #000;
 	background: #fff;
 }
 
-.hero .download .btn:hover span,
-.hero .download .btn:focus span {
+.about .download .btn:hover span,
+.about .download .btn:focus span {
 	text-decoration: underline;
 }
 
-.hero .download {
+.about .download {
 	margin-top: 60px;
 }
 
-.hero .download-text {
+.about .download-text {
 	margin-left: .5rem;
 }
 
-.hero .download-text span {
+.about .download-text span {
 	white-space: nowrap;
 }
 
-.hero .download-version {
+.about .download-version {
 	font-size: .8rem;
 	margin-top: .4rem;
 	margin-left: 1rem;
 	color: #fff;
 }
 
-.hero .download svg {
+.about .download svg {
 	align-self: center;
 	flex-shrink: 0;
 }
 
-.hero .container {
+.about .container {
 	display: flex;
 	gap: 60px;
 }
 
-.hero-left {
+.about-left {
 	font-size: 1.5rem;
 	max-width: 600px;
 	align-self: center;
 }
 
-.hero-left>p {
+.about-left>p {
 	margin-top: 0;
 }
 
-.hero-fluff b {
+.about-fluff b {
 	color: var(--color-accent);
 }
 
-.hero-screenshot {
+.about-screenshot {
 	width: 125%;
 	max-width: 1200px;
 	border-radius: 10px;
@@ -311,6 +311,15 @@ header h1 img {
 	font-size: 0;
 }
 
+.image-container {
+	text-align: center;
+	margin: 20px 0;
+}
+
+.image-container h2 {
+	margin-top: 10px;
+}
+
 .screenshots figcaption {
 	color: var(--color-accent);
 	line-height: 1;
@@ -363,11 +372,11 @@ header h1 img {
 }
 
 @media (max-width: 1300px) {
-	.hero .container {
+	.about .container {
 		flex-direction: column;
 	}
 
-	.hero-screenshot {
+	.about-screenshot {
 		width: 100%;
 		max-width: 100%;
 	}
@@ -398,26 +407,26 @@ header h1 img {
 		margin-bottom: 2rem;
 	}
 
-	.hero-screenshot,
+	.about-screenshot,
 	.header-buttons {
 		display: none;
 	}
 
-	.hero .download .btn {
+	.about .download .btn {
 		display: flex;
 	}
 
-	.hero .download-unstable {
+	.about .download-unstable {
 		display: block;
 		margin: 1rem 0;
 		text-align: center;
 	}
 
-	.hero .download-notes {
+	.about .download-notes {
 		text-align: center;
 	}
 
-	.hero .download-version {
+	.about .download-version {
 		text-decoration: underline;
 		font-size: 1rem;
 		margin-top: 1rem;
@@ -464,7 +473,7 @@ header h1 img {
 @media (max-width: 400px) {
 
 	header h1,
-	.hero-left {
+	.about-left {
 		font-size: 1.5rem;
 	}
 }
