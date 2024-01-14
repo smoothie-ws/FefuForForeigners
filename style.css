@@ -132,7 +132,7 @@ header h1 img {
 	max-width: 1320px;
 }
 
-.about .apply .btn {
+.about .btn {
 	position: relative;
 	display: inline-flex;
 	align-items: center;
@@ -148,46 +148,24 @@ header h1 img {
 	padding: .5rem 1rem;
 }
 
-.about .apply-unstable a:hover,
-.about .apply-unstable a:focus {
-	border-radius: 6px;
-	color: var(--color-accent);
-}
-
-.about .apply .btn:hover,
-.about .apply .btn:focus {
+.about .btn:hover,
+.about .btn:focus {
 	text-decoration: none;
 	color: #000;
 	background: #fff;
 }
 
-.about .apply .btn:hover span,
-.about .apply .btn:focus span {
+.about .btn:hover span,
+.about .btn:focus span {
 	text-decoration: underline;
 }
 
-.about .apply {
+.about {
 	margin-top: 60px;
 }
 
 .about .apply-text {
 	margin-left: .5rem;
-}
-
-.about .apply-text span {
-	white-space: nowrap;
-}
-
-.about .apply-version {
-	font-size: .8rem;
-	margin-top: .4rem;
-	margin-left: 1rem;
-	color: #fff;
-}
-
-.about .apply svg {
-	align-self: center;
-	flex-shrink: 0;
 }
 
 .about .container {
@@ -199,10 +177,6 @@ header h1 img {
 	font-size: 1.5rem;
 	max-width: 600px;
 	align-self: center;
-}
-
-.about-left>p {
-	margin-top: 0;
 }
 
 .about-right {
@@ -221,13 +195,13 @@ header h1 img {
 	box-shadow: rgba(17, 107, 129, 0.747) 0 0 80px 0;
 }
 
-.supported img {
+.faculties img {
 	width: 24px;
 	height: 24px;
 	vertical-align: -0.2rem;
 }
 
-.supported a {
+.faculties a {
 	white-space: nowrap;
 }
 
@@ -262,10 +236,6 @@ header h1 img {
 	display: flex;
 	gap: 2rem;
 	margin-bottom: 3rem;
-}
-
-.pro:last-child {
-	margin-bottom: 0;
 }
 
 .pro-icon {
@@ -304,28 +274,13 @@ header h1 img {
 	aspect-ratio: 1 / 1;
 }
 
-.opps figure {
-	margin: 0;
-	width: 480px;
-	font-size: 0;
-}
-
-.image-container {
+.opp-container {
 	text-align: center;
 	margin: 20px 0;
 }
 
-.image-container h2 {
+.opp-container h2 {
 	margin-top: 10px;
-}
-
-.opps figcaption {
-	color: var(--color-accent);
-	line-height: 1;
-	padding: 1rem;
-	font-size: 1.5rem;
-	text-align: center;
-	text-wrap: balance;
 }
 
 .footnote {
@@ -351,25 +306,6 @@ header h1 img {
 	text-align: right;
 }
 
-.review {
-	font-family: Consolas, monospace;
-	border: 2px solid #ffffff;
-	border-radius: 1rem;
-	color: #f8f8f2;
-	padding: 2rem;
-}
-
-.review-header {
-	background: #ffffff;
-	color: #000;
-	border-radius: 1rem;
-	padding: .2rem 1rem;
-	position: absolute;
-	top: 0;
-	right: .5rem;
-	z-index: 1;
-}
-
 @media (max-width: 1300px) {
 	.about .container {
 		flex-direction: column;
@@ -387,15 +323,6 @@ header h1 img {
 		flex-direction: column;
 	}
 
-	.pro-code {
-		width: 100%;
-	}
-
-	.review {
-		overflow-x: auto;
-		padding: .5rem;
-	}
-
 	.opps {
 		margin-top: 1rem;
 	}
@@ -406,7 +333,7 @@ header h1 img {
 		margin-bottom: 2rem;
 	}
 
-	.image-container {
+	.opp-container {
 		max-width: 300px;
 	}
 
@@ -414,25 +341,8 @@ header h1 img {
 		display: none;
 	}
 
-	.about .apply .btn {
+	.about .btn {
 		display: flex;
-	}
-
-	.about .apply-unstable {
-		display: block;
-		margin: 1rem 0;
-		text-align: center;
-	}
-
-	.about .apply-notes {
-		text-align: center;
-	}
-
-	.about .apply-version {
-		text-decoration: underline;
-		font-size: 1rem;
-		margin-top: 1rem;
-		margin-left: 0;
 	}
 
 	.pros {
@@ -454,6 +364,7 @@ header h1 img {
 	.footer .container,
 	.opps {
 		flex-direction: column;
+		align-items: center;
 	}
 
 	.footer .container {
@@ -463,12 +374,6 @@ header h1 img {
 	.footer .footer-left,
 	.footer .footer-right {
 		text-align: center;
-	}
-
-	.opps figure {
-		width: auto;
-		max-width: 480px;
-		margin: 0 auto;
 	}
 
 	.map {
