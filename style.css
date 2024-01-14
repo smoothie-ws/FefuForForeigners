@@ -311,6 +311,10 @@ header h1 img {
 }
 
 @media (max-width: 1300px) {
+	.about .container {
+		flex-direction: column;
+	}
+
 	.about-pic {
 		width: 100%;
 		max-width: 100%;
