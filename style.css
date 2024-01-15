@@ -23,6 +23,7 @@ body {
 	background-image: radial-gradient(960px 1440px at 35% 0%, #191c37, #171724);
 	background-repeat: repeat;
 	background-size: cover;
+	overflow-x: hidden;
 }
 
 a {
@@ -294,7 +295,7 @@ header h1 img {
 .footnote {
 	text-align: center;
 	text-wrap: balance;
-	margin: 2rem;
+	padding: 2rem;
 }
 
 .footer {
