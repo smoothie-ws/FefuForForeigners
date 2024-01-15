@@ -49,6 +49,7 @@ header .container {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	padding: 0 1rem;
 }
 
 .header-button {
@@ -102,6 +103,7 @@ header .container {
 	height: 40px;
 	gap: 5px;
 	transition: color 0.15s linear, background 0.15s linear;
+	/* padding: 0 1rem; */
 }
 
 .header-lang:hover {
@@ -131,7 +133,7 @@ header h1 img {
 
 .container {
 	margin: 0 auto;
-	padding: 0 1rem;
+	/* padding: 0 0.5rem; */
 	max-width: 1320px;
 }
 
@@ -180,11 +182,13 @@ header h1 img {
 	font-size: 1.5rem;
 	max-width: 600px;
 	align-self: center;
+	padding: 0 1rem;
 }
 
 .about-right {
 	max-width: 720px;
 	align-self: center;
+	padding: 0 1rem;
 }
 
 .about-fluff b {
@@ -290,7 +294,7 @@ header h1 img {
 .footnote {
 	text-align: center;
 	text-wrap: balance;
-	margin-bottom: 6rem;
+	margin: 2rem;
 }
 
 .footer {
